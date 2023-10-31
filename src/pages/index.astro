@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/Layout.astro';
+import '../styles/pages/home.scss';
+
+const pageTitle = 'トップページ';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h2>トップページ</h2>
+</BaseLayout>
+
+<style lang="scss">
+  h2 {
+    @include fz(20);
+  }
+</style>
+
+<script>
+  import '../scripts/home.ts';
+</script>

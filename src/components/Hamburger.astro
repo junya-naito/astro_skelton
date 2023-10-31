@@ -1,0 +1,29 @@
+---
+
+---
+
+<div class="hamburger">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</div>
+
+<style lang="scss">
+  .hamburger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    @include mq(md) {
+      display: block;
+    }
+  }
+
+  .line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: $black;
+  }
+</style>

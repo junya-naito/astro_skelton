@@ -1,0 +1,30 @@
+---
+import Hamburger from '../components/Hamburger.astro';
+---
+
+<header>
+  <div class="inner">
+    <div class="logo">
+      <a href="/">ロゴ</a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/">ホーム</a></li>
+        <li><a href="/page">ページ</a></li>
+      </ul>
+    </nav>
+    <Hamburger />
+  </div>
+</header>
+
+<style lang="scss">
+  .inner {
+    display: flex;
+  }
+  .nav {
+    ul {
+      display: flex;
+      gap: 20px;
+    }
+  }
+</style>
