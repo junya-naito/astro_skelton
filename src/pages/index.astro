@@ -1,12 +1,18 @@
 ---
 import BaseLayout from '../layouts/Layout.astro';
 import '../styles/pages/home.scss';
+import { Image } from 'astro:assets';
+import dummy from '../assets/dummy.jpg';
 
 const pageTitle = 'トップページ';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>トップページ</h2>
+  <div>
+    <Image src={dummy} format="avif" alt="ダミー画像" />
+    <Image src="/images/favicon.svg" alt="ダミー画像" width={120} height={100} />
+  </div>
 </BaseLayout>
 
 <style lang="scss">
